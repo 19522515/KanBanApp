@@ -29,6 +29,7 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-config-react": "^1.1.7",
     "eslint-plugin-prettier": "^4.0.0",
+    "gh-pages": "^4.0.0",
     "i18next": "^21.8.3",
     "i18next-browser-languagedetector": "^6.1.4",
     "immutability-helper": "^3.1.1",
@@ -46,9 +47,12 @@
     "react-scripts": "5.0.1",
     "styled-components": "^5.3.5",
     "typescript": "^4.6.4",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "homepage": "https://19522515.github.io/KanBan/"
   },
   "scripts": {
+    "predeploy": "react-scripts build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
